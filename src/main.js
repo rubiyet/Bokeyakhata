@@ -1,4 +1,11 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 
-createApp(App).mount("#app");
+
+import compHeader from './components/header_footer/header.vue';
+
+var app = createApp(App);
+
+app.component('compHeader', compHeader)
+
+app.mount("#app");
